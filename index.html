@@ -18,8 +18,10 @@
 
         if (count > 0) {
           $scope.message = 'Dans ' + count + ' jours !'
+        } else if (count === 0) {
+          $scope.message = 'Maintenant !'
         } else if (count + duration >= 0) {
-          $scope.message = 'On y est !'
+          $scope.message = 'On y est déjà !'
         } else {
           $scope.message = 'Bonne question...'
         }
