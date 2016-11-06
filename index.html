@@ -16,8 +16,10 @@
         var duration = 21
         var count = Math.round((theDate - now) / 1000 / 3600 / 24)
 
-        if (count > 0) {
+        if (count > 1) {
           $scope.message = 'Dans ' + count + ' jours !'
+        } else if (count === 1) {
+          $scope.message = 'Demain !'
         } else if (count === 0) {
           $scope.message = 'Maintenant !'
         } else if (count + duration >= 0) {
