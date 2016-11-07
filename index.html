@@ -47,7 +47,6 @@
         ]
 
         var rand = Math.floor(images.length * Math.random())
-        console.log('rand = ', rand)
         $scope.image = images[rand]
 
       }]);
@@ -55,10 +54,8 @@
 
   </head>
 
-  <!-- define angular controller -->
   <body ng-controller="main">
 
-    <!-- MAIN CONTENT AND INJECTED VIEWS -->
     <div id="main" class="text-center row" style='margin-top:10px;'>
       <h1 style='padding:15px;'> {{message}} </h1>
 
